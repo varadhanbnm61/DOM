@@ -1,0 +1,10 @@
+.container{
+
+    background-color: red;
+    border:solid;
+    border-radius: 20px 20px 20px 20px;
+}
+.heading{
+
+    background-color: aqua;
+}
