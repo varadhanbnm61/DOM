@@ -1,0 +1,77 @@
+dom=> document object model=>used to create and manipulate html elements dynamically.
+=>create element
+=>get element
+=>edit element
+=>manipulation of html elements
+=>element=tag+element
+=>attributes=class,id,styles,..
+
+
+
+
+step1:
+creating html element
+syntax:
+const/let variablename=document.createElement(html tag);
+
+step2:-
+adding content
+1.innerHtml
+2.innerText
+syntax:
+variablename.innerHtml="content"
+
+step3:
+appending the elements to the body of the html document
+syntax:
+document.body.append(variablename)
+
+const divison=document.createElement("div")
+divison.innerHTML="<h1>hi this div is created with dom</h1>"
+document.body.append(divison);
+
+ouput:
+
+hi this div is created with dom
+
+const divison=document.createElement("div")
+divison.innerText="<h1>hi this div is created with dom</h1>"
+document.body.append(divison);
+ouput:
+
+<h1>hi this div is created with dom</h1>
+
+
+const divison=document.createElement("div")
+divison.innerHTML="<span>hi this dynamic span</span>"
+document.body.append(divison);
+
+
+
+
+
+//creating multiple elements
+
+const divison=document.createElement("div");
+const span=document.createElement("span");
+span.innerHTML="hi is this dynamic span";
+divison.append(span);
+document.body.append(divison);
+
+
+
+//example 2:
+
+
+const divison=document.createElement("div");
+const span=document.createElement("span");
+const header=document.createElement("header");
+header.innerHTML="hi this is header"
+span.innerHTML="hi is this dynamic span";
+divison.append(header)
+divison.append(span);
+document.body.append(divison);
+
+
+
+
